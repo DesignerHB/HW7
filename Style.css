@@ -1,0 +1,192 @@
+p{
+    background-color: blue;
+}
+h1{
+    font-size: 40px;
+    text-shadow: 3px 12px 6px lightcoral;
+}
+.hb{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30%;
+}
+.c1{
+    height: 300px;
+    width: 300px;
+    background-color: cornflowerblue;
+    box-shadow: 5px 5px 5px red;
+    position: relative;
+    margin: auto;
+}
+.c1 img{
+    width: 100%;
+}
+.c2{
+    height: 300px;
+    width: 300px;
+    background-color: cornflowerblue;
+    position: relative;
+    margin: auto;
+}
+.c2::before{
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+    width: 90%;
+    height: 30px;
+    background-color: black;
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.c2::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        height: 30px;
+        background-color: black;
+        transform-origin: :right;
+        transform: skewY(-5deg);
+        z-index: -1;
+        filter: blur(5px);
+}
+.c3{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+}
+.c3{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    
+   
+}
+.c4{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    margin: auto;
+    position: absolute;
+    
+}
+.c5{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+}
+.c5::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+    bottom: -50px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(5px);
+}
+.c6{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+}
+.c6::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    bottom: -20px;
+    z-index: -1;
+    filter: blur(8px);
+}
+body{
+    background-color: blue;
+}
+.c7{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5), 15px 15px 15px rgba(0, 0, 0, 1);
+}
+.c8{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.4), 15px 15px 15px rgba(0, 0, 0, 0.4), inset -15px -15px 15px rgba(255,255,255,0.4), inset 15px 15px 15px rgba(0, 0, 0, 0.4) ;
+}
+.c9{
+    background-repeat: no-repeat;
+    height: 94px;
+    width: 93px;
+    background-image: url(pic-5.webp);
+    background-position: -327px -79px;    
+    position: relative;
+    margin: auto;
+}
+.c9:hover{
+    background-position: -447px -79px;
+}
+.hb1{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: relative;
+    margin: 100px auto;
+    transform: rotate(45deg);
+    border-radius: 25px;
+}
+.hb1 h2{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 30px;
+    transform: rotate(-45deg);
+}
+.hb2{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    position: relative;
+    margin: auto;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 2s;
+}
+.hb2:hover{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transform: rotate(360deg);
+    border-radius: 25px;
+}
+.hb2 p{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 30%;
+    background-color: aqua;
+}
